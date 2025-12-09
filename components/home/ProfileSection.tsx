@@ -77,32 +77,54 @@ export function ProfileSection() {
                         </div>
                     </a>
 
-                    {/* Profile Card */}
-                    <a
-                        href="#profile"
+                    {/* Aroma Yoga Class Card */}
+                    <Link
+                        href="/blog/mama-aroma-yoga"
                         className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                     >
-                        <div className="relative aspect-[16/9] w-full bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
-                            <div className="text-6xl">👤</div>
+                        <div className="relative aspect-[16/9] w-full bg-slate-200">
+                            <Image
+                                src="/images/aroma-yoga-class.png"
+                                alt="Aroma Craft & Yoga Class"
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
                         </div>
                         <div className="flex flex-1 flex-col p-6">
+                            <div className="mb-3 flex items-center justify-between text-xs">
+                                <span className="font-medium text-pink-400">Yoga & Aroma</span>
+                            </div>
+                            <h3 className="mb-3 text-lg font-bold leading-snug text-slate-800 transition group-hover:text-pink-400">
+                                身体をゆるめる「ママの休憩室」
+                            </h3>
                             <div className="mt-auto pt-2 text-sm font-semibold text-slate-500 group-hover:text-pink-400">
                                 詳しく見る →
                             </div>
                         </div>
-                    </a>
+                    </Link>
 
-                    {/* Contact Card */}
+                    {/* Instructor Course Card */}
                     <a
                         href="#contact"
                         className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                     >
-                        <div className="relative aspect-[16/9] w-full bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
-                            <div className="text-6xl">💬</div>
+                        <div className="relative aspect-[16/9] w-full bg-slate-200">
+                            <Image
+                                src="/images/aroma-instructor-course.jpg"
+                                alt="Aroma Yoga Instructor Training Course"
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
                         </div>
                         <div className="flex flex-1 flex-col p-6">
+                            <div className="mb-3 flex items-center justify-between text-xs">
+                                <span className="font-medium text-pink-400">Coming Soon</span>
+                            </div>
+                            <h3 className="mb-3 text-lg font-bold leading-snug text-slate-800 transition group-hover:text-pink-400">
+                                アロマヨガ講師養成講座
+                            </h3>
                             <div className="mt-auto pt-2 text-sm font-semibold text-slate-500 group-hover:text-pink-400">
-                                詳しく見る →
+                                お問い合わせ →
                             </div>
                         </div>
                     </a>

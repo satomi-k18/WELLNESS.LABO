@@ -19,23 +19,12 @@ export default defineType({
                 maxLength: 96,
             },
         }),
-        defineField({
-            name: 'author',
-            title: 'Author',
-            type: 'reference',
-            to: { type: 'author' },
-        }),
+
         defineField({
             name: 'categories',
             title: 'Categories',
             type: 'array',
-            of: [
-                { type: 'string' },
-                { type: 'reference', to: [{ type: 'category' }] }
-            ],
-            options: {
-                layout: 'tags',
-            },
+            of: [{ type: 'reference', to: { type: 'category' } }],
         }),
         defineField({
             name: 'mainImage',

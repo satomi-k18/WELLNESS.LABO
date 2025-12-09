@@ -9,7 +9,7 @@ export const revalidate = 60;
 
 export default async function BlogPage() {
     const posts = await client.fetch(POSTS_QUERY);
-    console.log("Blog Posts Data:", JSON.stringify(posts, null, 2));
+    console.log("Blog Posts Data: ", JSON.stringify(posts, null, 2));
 
     return (
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10">

@@ -97,22 +97,18 @@ export default async function BlogPostPage({
             {/* Footer / Author */}
             <div className="mt-20 border-t border-slate-100 pt-12">
                 <div className="flex items-center gap-6 rounded-2xl bg-slate-50 p-8">
-                    {post.author?.image && (
-                        <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full">
-                            <Image
-                                src={urlFor(post.author.image).url()}
-                                alt={post.author.name}
-                                fill
-                                className="object-cover"
-                            />
+                    <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full bg-slate-200">
+                        {/* Placeholder or static logo if available */}
+                        <div className="flex h-full w-full items-center justify-center text-2xl">
+                            🌿
                         </div>
-                    )}
+                    </div>
                     <div>
                         <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
                             Written by
                         </p>
                         <p className="text-lg font-bold text-slate-800">
-                            {post.author?.name || "Wellness Labo"}
+                            Wellness Labo
                         </p>
                     </div>
                 </div>
