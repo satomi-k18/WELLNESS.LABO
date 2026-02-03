@@ -33,13 +33,15 @@ export function ProfileSection() {
                         </h2>
                         <div className="space-y-4 text-slate-600 leading-relaxed">
                             <p>
-                                フリーヨガインストラクターとして活動しながら、
-                                「おうちで整う美と健康」をテーマに情報を発信しています。
+                                生きづらかった過去を持つ、あなたの伴走者。
                             </p>
                             <p>
-                                忙しい毎日の中でも、少しの工夫で心と体は変わります。
-                                LiveGoodサプリメントや厳選したウェルネスアイテムを通じて、
-                                無理なく続けられるヘルシーなライフスタイルをご提案します。
+                                学生時代の「生きづらさ」や自身の経験から、
+                                ヨガが単なる運動ではなく「自分に気づく練習」であることを知りました。
+                            </p>
+                            <p>
+                                完璧を目指す必要はありません。
+                                私も同じ痛みを知るものとして、あなたの隣でそっと伴走します。
                             </p>
                         </div>
                     </div>
@@ -66,10 +68,10 @@ export function ProfileSection() {
                         </div>
                         <div className="flex flex-1 flex-col p-6">
                             <div className="mb-3 flex items-center justify-between text-xs">
-                                <span className="font-medium text-pink-400">LiveGood</span>
+                                <span className="font-medium text-pink-400">Life</span>
                             </div>
                             <h3 className="mb-3 text-lg font-bold leading-snug text-slate-800 transition group-hover:text-pink-400">
-                                アフィリエイター募集中
+                                私を支えるお守りアイテム
                             </h3>
                             <div className="mt-auto pt-2 text-sm font-semibold text-slate-500 group-hover:text-pink-400">
                                 詳しく見る →
@@ -92,10 +94,10 @@ export function ProfileSection() {
                         </div>
                         <div className="flex flex-1 flex-col p-6">
                             <div className="mb-3 flex items-center justify-between text-xs">
-                                <span className="font-medium text-pink-400">Yoga & Aroma</span>
+                                <span className="font-medium text-pink-400">Body</span>
                             </div>
                             <h3 className="mb-3 text-lg font-bold leading-snug text-slate-800 transition group-hover:text-pink-400">
-                                身体をゆるめる「ママの休憩室」
+                                身体をゆるめる時間
                             </h3>
                             <div className="mt-auto pt-2 text-sm font-semibold text-slate-500 group-hover:text-pink-400">
                                 詳しく見る →
@@ -118,10 +120,10 @@ export function ProfileSection() {
                         </div>
                         <div className="flex flex-1 flex-col p-6">
                             <div className="mb-3 flex items-center justify-between text-xs">
-                                <span className="font-medium text-pink-400">Coming Soon</span>
+                                <span className="font-medium text-pink-400">Vision</span>
                             </div>
                             <h3 className="mb-3 text-lg font-bold leading-snug text-slate-800 transition group-hover:text-pink-400">
-                                アロマヨガ講師養成講座
+                                伝える人になる (Coming Soon)
                             </h3>
                             <div className="mt-auto pt-2 text-sm font-semibold text-slate-500 group-hover:text-pink-400">
                                 お問い合わせ →
