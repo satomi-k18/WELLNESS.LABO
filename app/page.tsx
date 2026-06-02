@@ -1,16 +1,22 @@
 import { HeroSection } from "@/components/home/HeroSection";
+import { SubstackSection } from "@/components/home/SubstackSection";
+import { ProblemSection } from "@/components/home/ProblemSection";
+import { PhilosophySection } from "@/components/home/PhilosophySection";
+import { ThreePillarsSection } from "@/components/home/ThreePillarsSection";
 import { ProfileSection } from "@/components/home/ProfileSection";
-import { FeaturedPosts } from "@/components/home/FeaturedPosts";
-import { SnsSection } from "@/components/home/SnsSection";
+import { ServiceSection } from "@/components/home/ServiceSection";
 import { ContactSection } from "@/components/home/ContactSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <SubstackSection />
+      <ProblemSection />
+      <PhilosophySection />
+      <ThreePillarsSection />
       <ProfileSection />
-      <FeaturedPosts />
-      <SnsSection />
+      <ServiceSection />
       <ContactSection />
     </>
   );

@@ -2,20 +2,27 @@ import Link from "next/link";
 
 export function ContactSection() {
     return (
-        <section id="contact" className="bg-slate-800 py-20 text-center text-white md:py-32">
-            <div className="mx-auto max-w-4xl px-6 md:px-10">
-                <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-                    お問い合わせ
+        <section id="contact" className="bg-slate-800 py-24 text-center text-white md:py-36">
+            <div className="mx-auto max-w-2xl px-6 md:px-10">
+                <span className="mb-6 block text-xs font-bold uppercase tracking-[0.2em] text-pink-300">
+                    Contact
+                </span>
+                <h2 className="mb-4 text-2xl font-bold leading-relaxed md:text-4xl">
+                    まずは、<br />
+                    呼吸を整える時間を。
                 </h2>
-                <p className="mb-10 text-slate-300">
-                    お仕事のご依頼やご相談は、<br className="md:hidden" />
-                    こちらからお気軽にご連絡ください。
+                <p className="mb-4 text-slate-300 leading-relaxed md:text-lg">
+                    頑張るためではなく、<br />
+                    自分に戻るために。
+                </p>
+                <p className="mb-10 text-sm text-slate-400">
+                    お気軽にLINEからご相談ください。
                 </p>
                 <Link
-                    href="https://lin.ee/OfU5u0S"
+                    href="https://lin.ee/r7oFd5g"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block rounded-full bg-white px-10 py-4 text-sm font-bold tracking-widest text-slate-800 transition-colors hover:bg-pink-50"
+                    className="inline-flex items-center gap-3 rounded-full bg-[#06C755] px-12 py-4 text-sm font-bold tracking-wider text-white shadow-lg transition-all hover:bg-[#05b04d] hover:shadow-xl"
                 >
                     LINEで問い合わせる
                 </Link>

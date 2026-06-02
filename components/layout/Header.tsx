@@ -15,18 +15,18 @@ export function Header() {
           <Link href="/" className="transition hover:text-pink-400">
             HOME
           </Link>
-          <Link href="/blog" className="transition hover:text-pink-400">
-            BLOG
-          </Link>
           <a href="#profile" className="transition hover:text-pink-400">
-            PROFILE
+            ABOUT
           </a>
           <a
-            href="https://lin.ee/OfU5u0S"
+            href="https://note.com/yoga_satomi"
             target="_blank"
             rel="noopener noreferrer"
             className="transition hover:text-pink-400"
           >
+            NOTE
+          </a>
+          <a href="#contact" className="transition hover:text-pink-400">
             CONTACT
           </a>
         </nav>
