@@ -2,10 +2,10 @@ export function PhilosophySection() {
     return (
         <>
             {/* 原因 */}
-            <section className="bg-white py-20 md:py-32">
+            <section className="bg-surface py-20 md:py-28">
                 <div className="mx-auto max-w-2xl px-6 md:px-10">
-                    <div className="space-y-8 text-slate-600 leading-[2.2] md:text-lg text-center">
-                        <p className="text-xl font-medium text-slate-700 md:text-2xl">
+                    <div className="space-y-8 text-center leading-[2.2] text-muted md:text-lg">
+                        <p className="font-serif text-xl font-medium text-ink md:text-2xl">
                             それ、心と体のバランスが乱れているサインかもしれません。
                         </p>
                         <p>
@@ -38,10 +38,10 @@ export function PhilosophySection() {
                         <p>
                             暮らしも。
                         </p>
-                        <p className="text-lg font-medium text-slate-700 md:text-xl">
+                        <p className="font-serif text-lg font-medium text-ink md:text-xl">
                             だから私たちは、
                         </p>
-                        <p className="text-lg font-medium text-slate-700 md:text-xl">
+                        <p className="font-serif text-lg font-medium text-ink md:text-xl">
                             まず「整えること」から始めます。
                         </p>
                     </div>

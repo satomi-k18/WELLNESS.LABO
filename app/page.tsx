@@ -5,6 +5,7 @@ import { PhilosophySection } from "@/components/home/PhilosophySection";
 import { ThreePillarsSection } from "@/components/home/ThreePillarsSection";
 import { ProfileSection } from "@/components/home/ProfileSection";
 import { ServiceSection } from "@/components/home/ServiceSection";
+import { NotePostsSection } from "@/components/home/NotePostsSection";
 import { ContactSection } from "@/components/home/ContactSection";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <ThreePillarsSection />
       <ProfileSection />
       <ServiceSection />
+      <NotePostsSection />
       <ContactSection />
     </>
   );

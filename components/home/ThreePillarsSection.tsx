@@ -48,13 +48,13 @@ const pillars = [
 
 export function ThreePillarsSection() {
     return (
-        <section className="bg-slate-50 py-20 md:py-32">
+        <section className="bg-cream py-20 md:py-28">
             <div className="mx-auto max-w-4xl px-6 md:px-10">
                 <div className="mb-16 text-center">
-                    <span className="mb-4 block text-xs font-bold uppercase tracking-[0.2em] text-pink-400">
+                    <span className="mb-4 block text-xs uppercase tracking-[0.2em] text-accent-deep">
                         3 Pillars
                     </span>
-                    <h2 className="text-2xl font-bold text-slate-800 md:text-3xl">
+                    <h2 className="font-serif text-2xl font-medium text-ink md:text-3xl">
                         3つの「整える」
                     </h2>
                 </div>
@@ -69,7 +69,7 @@ export function ThreePillarsSection() {
                         >
                             {/* Image */}
                             <div className="relative aspect-video w-full max-w-sm mx-auto flex-shrink-0 md:w-96 md:max-w-none md:mx-0">
-                                <div className="absolute -inset-3 rounded-3xl bg-pink-100/40" />
+                                <div className="absolute -inset-3 rounded-3xl bg-mint/60" />
                                 <div className="relative h-full overflow-hidden rounded-2xl shadow-md">
                                     <Image
                                         src={pillar.image}
@@ -82,14 +82,14 @@ export function ThreePillarsSection() {
 
                             {/* Text */}
                             <div className="flex-1">
-                                <p className="mb-1 text-3xl font-bold text-pink-200">{pillar.number}</p>
-                                <h3 className="mb-1 text-xl font-bold text-slate-800 md:text-2xl">
+                                <p className="mb-1 font-serif text-3xl text-accent">{pillar.number}</p>
+                                <h3 className="mb-1 font-serif text-xl font-medium text-ink md:text-2xl">
                                     {pillar.label}
                                 </h3>
-                                <p className="mb-6 text-sm font-medium tracking-wider text-pink-400">
+                                <p className="mb-6 text-sm tracking-wider text-accent-deep">
                                     {pillar.sub}
                                 </p>
-                                <div className="space-y-4 text-slate-600 leading-relaxed">
+                                <div className="space-y-4 text-muted leading-relaxed">
                                     {pillar.body.map((text, j) => (
                                         <p key={j} style={{ whiteSpace: "pre-line" }}>
                                             {text}
@@ -97,8 +97,8 @@ export function ThreePillarsSection() {
                                     ))}
                                 </div>
                                 {pillar.note && (
-                                    <div className="mt-6 rounded-xl border border-pink-100 bg-white px-5 py-4 text-sm text-slate-500">
-                                        <p className="mb-1 font-semibold text-pink-400">
+                                    <div className="mt-6 rounded-xl border border-line bg-surface px-5 py-4 text-sm text-muted">
+                                        <p className="mb-1 font-medium text-accent-deep">
                                             {pillar.note.label}
                                         </p>
                                         {pillar.note.url ? (
@@ -106,7 +106,7 @@ export function ThreePillarsSection() {
                                                 href={pillar.note.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="underline underline-offset-2 hover:text-pink-400 transition-colors"
+                                                className="underline underline-offset-2 hover:text-accent-deep transition-colors"
                                                 style={{ whiteSpace: "pre-line" }}
                                             >
                                                 {pillar.note.text}

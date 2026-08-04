@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP } from "next/font/google";
+import { Noto_Sans_JP, Zen_Old_Mincho } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -8,6 +8,13 @@ const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+});
+
+// 見出し用の明朝（デザイン.md）
+const zenOldMincho = Zen_Old_Mincho({
+  variable: "--font-zen-old-mincho",
+  subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${notoSansJP.variable} font-sans antialiased bg-slate-50 text-slate-700`}
+        className={`${notoSansJP.variable} ${zenOldMincho.variable} font-sans antialiased bg-cream text-ink`}
       >
         <Header />
         <main className="pt-16 min-h-screen">
