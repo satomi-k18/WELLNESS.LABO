@@ -1,0 +1,15 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"main": ".open-next/worker.js",
+	"name": "wellness-labo",
+	"compatibility_date": "2026-08-04",
+	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	"images": {
+		// next/image の画像最適化を Cloudflare 側で行う
+		"binding": "IMAGES"
+	}
+}
