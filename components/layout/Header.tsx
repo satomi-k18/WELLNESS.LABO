@@ -21,24 +21,30 @@ export function Header() {
           >
             HOME
           </Link>
-          <a
-            href="#profile"
+          <Link
+            href="/#profile"
             className="transition-colors duration-300 hover:text-accent-deep"
           >
             ABOUT
-          </a>
+          </Link>
+          <Link
+            href="/course"
+            className="transition-colors duration-300 hover:text-accent-deep"
+          >
+            COURSE
+          </Link>
           <Link
             href="/blog"
             className="transition-colors duration-300 hover:text-accent-deep"
           >
             BLOG
           </Link>
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="transition-colors duration-300 hover:text-accent-deep"
           >
             CONTACT
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile menu */}
