@@ -4,6 +4,8 @@
 	"name": "wellness-labo",
 	"compatibility_date": "2026-08-04",
 	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	// 確認用の workers.dev URL を残す（routes を書くと既定で無効になるため）
+	"workers_dev": true,
 	"assets": {
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
@@ -11,5 +13,10 @@
 	"images": {
 		// next/image の画像最適化を Cloudflare 側で行う
 		"binding": "IMAGES"
-	}
+	},
+	// 本番ドメイン。デプロイ時に Cloudflare 側の DNS と SSL 証明書も自動で用意される
+	"routes": [
+		{ "pattern": "wellnesslife-lab.com", "custom_domain": true },
+		{ "pattern": "www.wellnesslife-lab.com", "custom_domain": true }
+	]
 }

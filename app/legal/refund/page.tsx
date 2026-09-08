@@ -8,7 +8,6 @@ export const metadata: Metadata = {
     robots: { index: false },
 };
 
-/* TODO: 以下の3つの条件は、内容をご確認のうえ確定してください */
 const rows: LegalRow[] = [
     {
         label: "開講前のキャンセル",

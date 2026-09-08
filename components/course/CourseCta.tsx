@@ -6,7 +6,6 @@ const dates = [
 ];
 
 // 法定表示。申込ボタンより「上」に置く
-// TODO: courseData.ts の tokushohoUrl / refundPolicyUrl にページのURLを入れる
 const legalLinks = [
     { label: "特定商取引法に基づく表記", href: courseTBD.tokushohoUrl },
     { label: "キャンセル・返金規定", href: courseTBD.refundPolicyUrl },
